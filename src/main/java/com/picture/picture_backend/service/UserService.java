@@ -1,10 +1,14 @@
 package com.picture.picture_backend.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.picture.picture_backend.model.dto.UserQueryRequest;
 import com.picture.picture_backend.model.entity.User;
 import com.picture.picture_backend.model.vo.LoginUserVO;
+import com.picture.picture_backend.model.vo.UserVO;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
 * @author blues
@@ -56,5 +60,23 @@ public interface UserService extends IService<User> {
      */
     boolean userLogout(HttpServletRequest request);
 
+    /**
+     * 获取脱敏后用户信息
+     * @param user 用户信息
+     * @return 脱敏后用户信息
+     */
+    UserVO getUserVO(User user);
 
+
+    List<UserVO> getUserVOList(List<User> userList);
+
+    /**
+     * 查询用户
+     * @param userQueryRequest 查询参数
+     * @return 返回参数
+     */
+    QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest);
+
+    //密码加密
+    String getEncryptPassword(String userPassword);
 }
