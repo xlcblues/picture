@@ -1,7 +1,6 @@
 package com.picture.picture_backend.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import generator.domain.User;
 import com.picture.picture_backend.service.UserService;
 import com.picture.picture_backend.mapper.UserMapper;
 import org.springframework.stereotype.Service;

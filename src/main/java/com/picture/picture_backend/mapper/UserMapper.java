@@ -1,6 +1,5 @@
 package com.picture.picture_backend.mapper;
 
-import generator.domain.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

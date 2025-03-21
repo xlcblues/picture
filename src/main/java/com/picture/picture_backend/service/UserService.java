@@ -1,6 +1,5 @@
 package com.picture.picture_backend.service;
 
-import generator.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
