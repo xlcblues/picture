@@ -1,6 +1,7 @@
 package com.picture.picture_backend.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.picture.picture_backend.model.entity.User;
 
 /**
 * @author blues

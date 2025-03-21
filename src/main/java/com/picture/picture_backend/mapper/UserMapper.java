@@ -1,6 +1,7 @@
 package com.picture.picture_backend.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.picture.picture_backend.model.entity.User;
 
 /**
 * @author blues
